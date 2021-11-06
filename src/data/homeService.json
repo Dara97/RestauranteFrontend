@@ -1,0 +1,19 @@
+[
+    {
+        "id": "fiesta",
+        "img": "http://localhost:3000/images/fondo_eventos.jpg"
+    },
+    {
+        "id":"matrimonio",
+        "img": "http://localhost:3000/images/matrimonio.jpg"
+    },
+    {
+        "id":"cena",
+        "img": "http://localhost:3000/images/imagen2.jpg"
+    },
+    {
+        "id":"cumpleaños",
+        "img": "http://localhost:3000/images/cumplea%C3%B1os2.jpg"
+    }
+
+]

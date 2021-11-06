@@ -1,0 +1,14 @@
+[
+    {
+        "img": "http://localhost:3000/images/personal1@2x.png",
+        "nombre": "Jairo Díaz"
+    },
+    {
+        "img": "http://localhost:3000/images/testimonio1@2x.png",
+        "nombre": "Sebastian Gimenez"
+    },
+    {
+        "img": "http://localhost:3000/images/personal2@2x.png",
+        "titulo": "Sofia Mendezs"
+    }
+]

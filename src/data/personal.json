@@ -1,0 +1,22 @@
+[
+    {
+        "id": "persona1",
+        "img": "http://localhost:3000/images/gerente.jpg",
+        "titulo": "Gerente"
+    },
+    {
+        "id": "persona2",
+        "img": "http://localhost:3000/images/servicio.jpg",
+        "titulo": "Servicio"
+    },
+    {
+        "id": "persona3",
+        "img": "http://localhost:3000/images/chef.jpg",
+        "titulo": "Chef"
+    },
+    {
+        "id": "persona4",
+        "img": "http://localhost:3000/images/mesera.jpg",
+        "titulo": "Mesera"
+    }
+]

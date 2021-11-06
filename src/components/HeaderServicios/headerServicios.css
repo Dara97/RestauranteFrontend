@@ -1,0 +1,13 @@
+#heroServicios {
+    background-image: url("http://localhost:3000/static/media/fondo_oscuro.4562a76b.jpg");
+    background-size: cover;
+    padding-top: 100px;
+    margin-bottom: 60px;
+    min-height: 500px;
+    color: #ffff;
+}
+
+div .parrafo p{
+margin-top:40px;
+color: #ffff;
+}
