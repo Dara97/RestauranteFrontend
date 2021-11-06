@@ -1,5 +1,5 @@
 import { Personal } from "../../components/NosotrosPersonal/personal";
-import "./nosotros.css";
+/* import "./nosotros.css"; */
 import personal from "../../data/personal.json";
 import { Carrusel } from "../../components/Carrusel/Carrusel";
 import carruselTestimonios from "../../data/carruselTest.json";
