@@ -28,7 +28,7 @@ export const MenuItem = ({
       </div>
 
       <div>
-        <img src={`/images/${image}`} alt="Hamburguesa especial" id="image" />
+        <img src={`https://res.cloudinary.com/ddqxtzvyw/image/upload/v1636248786/restaurant-images/${image}`} alt="Hamburguesa especial" id="image" />
       </div>
 
       <div id="priceProduct">

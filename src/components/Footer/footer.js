@@ -8,7 +8,7 @@ export const Footer = () => {
           <div className="col-md-2">
             <div className="logo">
               <img
-                src="../images/logo@2x.png"
+                src="https://res.cloudinary.com/ddqxtzvyw/image/upload/v1636248777/restaurant-images/logo%402x.png"
                 alt=""
                 width="180"
                 height="200"
