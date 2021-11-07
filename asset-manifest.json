@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pruebaPagina/static/css/main.0410402f.chunk.css",
-    "main.js": "/pruebaPagina/static/js/main.f917ccce.chunk.js",
-    "main.js.map": "/pruebaPagina/static/js/main.f917ccce.chunk.js.map",
+    "main.css": "/pruebaPagina/static/css/main.43d55faa.chunk.css",
+    "main.js": "/pruebaPagina/static/js/main.f939396a.chunk.js",
+    "main.js.map": "/pruebaPagina/static/js/main.f939396a.chunk.js.map",
     "runtime-main.js": "/pruebaPagina/static/js/runtime-main.cb534c72.js",
     "runtime-main.js.map": "/pruebaPagina/static/js/runtime-main.cb534c72.js.map",
     "static/css/2.383c0125.chunk.css": "/pruebaPagina/static/css/2.383c0125.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.f1511fc4.chunk.js.map": "/pruebaPagina/static/js/2.f1511fc4.chunk.js.map",
     "index.html": "/pruebaPagina/index.html",
     "static/css/2.383c0125.chunk.css.map": "/pruebaPagina/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.0410402f.chunk.css.map": "/pruebaPagina/static/css/main.0410402f.chunk.css.map",
+    "static/css/main.43d55faa.chunk.css.map": "/pruebaPagina/static/css/main.43d55faa.chunk.css.map",
     "static/js/2.f1511fc4.chunk.js.LICENSE.txt": "/pruebaPagina/static/js/2.f1511fc4.chunk.js.LICENSE.txt",
     "static/media/header.css": "/pruebaPagina/static/media/comida3.19392dd5.jpg",
     "static/media/Register.css": "/pruebaPagina/static/media/fondo_oscuro.4562a76b.jpg",
@@ -20,7 +20,7 @@
     "static/js/runtime-main.cb534c72.js",
     "static/css/2.383c0125.chunk.css",
     "static/js/2.f1511fc4.chunk.js",
-    "static/css/main.0410402f.chunk.css",
-    "static/js/main.f917ccce.chunk.js"
+    "static/css/main.43d55faa.chunk.css",
+    "static/js/main.f939396a.chunk.js"
   ]
 }
