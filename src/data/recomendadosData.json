@@ -1,14 +1,14 @@
 [
         {
-            "img": "/images/pizza_bacon.png",
+            "img": "../assets/images/pizza_bacon.png",
             "titulo": "Pizza napolitana"
         },
         {
-            "img": "/images/costillas_cordero.png",
+            "img": "../assets/images/costillas_cordero.png",
             "titulo": "Parrillada"
         },
         {
-            "img": "/images/ensalada_pasta.png",
+            "img": "src/assets/images/hamburguesa_especial.png",
             "titulo": "Pasta vegetariana"
         },
         {
