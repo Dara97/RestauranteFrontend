@@ -1,18 +1,18 @@
 [
         {
-            "img": "https://i.ibb.co/XkmjG9B/pizza-bacon.png",
+            "img": "http://localhost:3000/images/pizza_bacon.png",
             "titulo": "Pizza napolitana"
         },
         {
-            "img": "/images/costillas_cordero.png",
+            "img": "http://localhost:3000/images/costillas_cordero.png",
             "titulo": "Parrillada"
         },
         {
-            "img": "/images/ensalada_pasta.png",
+            "img": "http://localhost:3000/images/ensalada_pasta.png",
             "titulo": "Pasta vegetariana"
         },
         {
-            "img": "/images/hamburguesa_especial.png",
+            "img": "http://localhost:3000/images/hamburguesa_especial.png",
             "titulo": "Burger tres carnes"
         }
     ]
