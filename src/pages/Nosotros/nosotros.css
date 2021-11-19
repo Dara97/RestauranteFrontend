@@ -55,7 +55,7 @@ div .contener_imagen {
     #e8a722 75%,
     #db8f00 100%
   );
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   font-family: "Oswald", sans-serif;
   font-size: 40px;

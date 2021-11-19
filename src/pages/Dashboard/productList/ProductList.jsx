@@ -1,7 +1,6 @@
-import "./productList.css";
+/* import "./productList.css";
 import { DataGrid } from "@material-ui/data-grid";
 import { Delete, Edit } from "@material-ui/icons";
-/* import { menuDataProvisional } from "../../../../public/menuDataProvisional"; */
 import { Link } from "react-router-dom";
 import React, { Component } from "react";
 
@@ -12,7 +11,7 @@ class ProductList extends Component {
   }
   async componentDidMount() {
       try {
-          const response = await fetch()
+          const response = await fetch("http://localhost:41399/api/producto")
           console.log(response)
           const data = await response.json();
           this.setState({ data });
@@ -100,3 +99,129 @@ class ProductList extends Component {
 }
 
 export default ProductList;
+ */
+
+import React, { Component } from "react";
+
+class DatosProductos extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { datos: [] };
+  }
+
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  fetchData() {
+    fetch("http://localhost:41399/api/producto")
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ datos: data });
+      });
+  }
+
+  borrarEmpleado(id) {
+    fetch("http://localhost:41399/api/producto" + id, {
+      method: "DELETE",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        alert("dato eliminado");
+      });
+  }
+  editarEmpleado(id) {
+    fetch("http://localhost:41399/api/producto" + id, {
+      method: "UPDATE",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        alert("dato editado");
+      });
+  }
+
+  render() {
+    return this.state.datos.map((data) => {
+      return (
+        <div className="productoslista">
+        <div className="featured">
+          <div className="featuredItem">
+              <div key={data.id_producto}> </div>
+              {data.nombre}
+              {data.descripcion}
+              {data.precio}
+              <img ClassName="productListImg" src={data.imagen_producto} alt="" />
+            <div>
+              
+              <div key={data.id_producto}>
+                <button
+                  className="actionsNosotros"
+                  onClick={() => this.borrarEmpleado(data.id)}
+                >
+                  Eliminar
+                </button>
+                <button
+                  className="actionsNosotros"
+                  onClick={() => this.editarEmpleado(data.id)}
+                >
+                  Editar
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+          {/*   <div className="featuredItem">
+            <div className="featuredMoneyContainer">
+              <div key={data.id_producto}> </div>
+              <i>{data.nombre}</i>
+            </div>
+            <div>
+              <div key={data.id_producto}>
+                <button
+                  className="actionsNosotros"
+                  onClick={() => this.borrarEmpleado(data.id)}
+                >
+                  Eliminar
+                </button>
+                <button
+                  className="actionsNosotros"
+                  onClick={() => this.editarEmpleado(data.id)}
+                >
+                  Editar
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="featuredItem">
+            <div className="featuredMoneyContainer">
+              <div key={data.id_producto}> </div>
+              <img
+                src={data.imagen}
+                className="img-fluid rounded restaurante"
+                alt=""
+              />
+            </div>
+            <div>
+              <div key={data.id_producto}>
+                <button
+                  className="actionsNosotros"
+                  onClick={() => this.borrarEmpleado(data.id)}
+                >
+                  Eliminar
+                </button>
+                <button
+                  className="actionsNosotros"
+                  onClick={() => this.editarEmpleado(data.id)}
+                >
+                  Editar
+                </button>
+              </div>
+            </div>
+          </div> */}
+        </div>
+      );
+    });
+  }
+}
+
+export default DatosProductos;
