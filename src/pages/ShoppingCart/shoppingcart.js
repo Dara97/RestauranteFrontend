@@ -75,7 +75,7 @@ export const ShoppingCart = () => {
                   ({ id, name, description, price, image, count }) => (
                     <div className="carrito-item" key={id}>
                       <div className="carrito-item-img">
-                        <img src={"/images/" + image} alt={name} />
+                        <img src={`https://res.cloudinary.com/ddqxtzvyw/image/upload/v1636248786/restaurant-images/${image}`} alt={name} />
                         <p>{name}</p>
                       </div>
                       <div className="carrito-item-descripcion">

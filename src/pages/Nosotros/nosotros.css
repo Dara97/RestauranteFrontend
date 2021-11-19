@@ -1,11 +1,12 @@
-#historia{
-    background-image: url("http://localhost:3000/static/media/fondo_oscuro.4562a76b.jpg");
+#historia {
+  background-image: url("https://res.cloudinary.com/ddqxtzvyw/image/upload/v1636325215/restaurant-images/fondo_oscuro.jpg");
     background-size: cover;
     padding-top: 50px;
     margin-bottom: 60px;
     min-height: 600px;
     color: #ffff;
 }
+
 
 div .container_historia {
   /* margin-top: 90px; */

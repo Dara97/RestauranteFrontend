@@ -1,3 +1,4 @@
+import "./NosotrosAdmin.css";
 
 import React, { Component } from "react";
 
@@ -32,11 +33,10 @@ class Datos extends Component {
   render() {
     return this.state.datos.map((data) => {
       return (
-        <div>.</div>
-        /* <li key={data.id_nosotros}>
+        <li key={data.id_nosotros}>
           Nombre: <i>{data.historia}</i> Apellido <i>{data.imagen}</i>{" "}
           <button onClick={() => this.borrarEmpleado(data.id)}>Eliminar</button>
-        </li> */
+        </li>
       );
     });
   }

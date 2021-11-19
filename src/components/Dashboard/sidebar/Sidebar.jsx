@@ -14,16 +14,16 @@ import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
-    <div className="sidebar">
+    <div className="sidebar" style={{marginBottom:"50px"}}>
       <div className="sidebarWrapper">
         
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Administrar</h3>
+          {/* <h2 className="sidebarTitle">Administrar</h2> */}
           <ul className="sidebarList">
           <Link to="/inicio" className="link">
             <li className="sidebarListItem">
               <LineStyle className="sidebarIcon" />
-              Home
+              Nosotros
             </li>
             </Link>
             <Link to="/users" className="link">
@@ -64,7 +64,7 @@ export default function Sidebar() {
               <Comment className="sidebarIcon" />
               Comentarios
             </li>
-            
+                  
           </ul>
         </div>
        

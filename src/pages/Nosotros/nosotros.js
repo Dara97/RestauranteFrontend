@@ -1,5 +1,5 @@
 import { Personal } from "../../components/NosotrosPersonal/personal";
-/* import "./nosotros.css"; */
+import "./nosotros.css";
 import personal from "../../data/personal.json";
 import { Carrusel } from "../../components/Carrusel/Carrusel";
 import carruselTestimonios from "../../data/carruselTest.json";
@@ -10,7 +10,7 @@ export const Nosotros = () => {
     return (
         <>
 
-            <section id="historia">
+            <section id="historia" >
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 d-flex">
@@ -22,7 +22,7 @@ export const Nosotros = () => {
                         </div>
                         <div className="col-lg-7">
                             <div className="container contener_imagen">
-                                <img src="http://localhost:3000/images/restaurante1.jpg " className="img-fluid rounded restaurante" alt="" />
+                                <img src="https://res.cloudinary.com/ddqxtzvyw/image/upload/v1636248782/restaurant-images/restaurante1.jpg" className="img-fluid rounded restaurante" alt="" />
                             </div>
                         </div>
                     </div>

@@ -12,7 +12,7 @@ class ProductList extends Component {
   }
   async componentDidMount() {
       try {
-          const response = await fetch('./menuDataProvisional.json')
+          const response = await fetch()
           console.log(response)
           const data = await response.json();
           this.setState({ data });
@@ -44,7 +44,7 @@ class ProductList extends Component {
           );
         },
       },
-      { field: "description", headerName: "Descripción", width: 160 },
+      { field: "historia", headerName: "Descripción", width: 160 },
       {
         field: "status",
         headerName: "Status",

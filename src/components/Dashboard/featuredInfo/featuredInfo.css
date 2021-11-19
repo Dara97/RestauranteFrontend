@@ -2,7 +2,12 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-direction:column;
 }
+
+.actionsNosotros {
+    margin: 10px;
+  }
 
 .featuredItem {
   flex: 1;

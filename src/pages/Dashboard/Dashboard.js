@@ -12,7 +12,6 @@ import NewClient from "./newClient/NewClient";
 import ProductList from "./productList/ProductList";
 import Product from "./product/Product";
 import NewProduct from "./newProduct/NewProduct";
-import logo from "../../assets/images/logo@2x.png";
 
 function Dashboard() {
   return (
