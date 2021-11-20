@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/pruebaPagina/static/css/main.e1b56263.chunk.css",
-    "main.js": "/pruebaPagina/static/js/main.a91c8edc.chunk.js",
-    "main.js.map": "/pruebaPagina/static/js/main.a91c8edc.chunk.js.map",
-    "runtime-main.js": "/pruebaPagina/static/js/runtime-main.cb534c72.js",
-    "runtime-main.js.map": "/pruebaPagina/static/js/runtime-main.cb534c72.js.map",
-    "static/css/2.383c0125.chunk.css": "/pruebaPagina/static/css/2.383c0125.chunk.css",
-    "static/js/2.527fcc34.chunk.js": "/pruebaPagina/static/js/2.527fcc34.chunk.js",
-    "static/js/2.527fcc34.chunk.js.map": "/pruebaPagina/static/js/2.527fcc34.chunk.js.map",
-    "index.html": "/pruebaPagina/index.html",
-    "static/css/2.383c0125.chunk.css.map": "/pruebaPagina/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.e1b56263.chunk.css.map": "/pruebaPagina/static/css/main.e1b56263.chunk.css.map",
-    "static/js/2.527fcc34.chunk.js.LICENSE.txt": "/pruebaPagina/static/js/2.527fcc34.chunk.js.LICENSE.txt",
-    "static/media/header.css": "/pruebaPagina/static/media/comida3.19392dd5.jpg",
-    "static/media/Register.css": "/pruebaPagina/static/media/fondo_oscuro.4562a76b.jpg",
-    "static/media/logo@2x.04dd1c3c.png": "/pruebaPagina/static/media/logo@2x.04dd1c3c.png"
+    "main.css": "/RestauranteFrontend/static/css/main.8763a4e9.chunk.css",
+    "main.js": "/RestauranteFrontend/static/js/main.a91c8edc.chunk.js",
+    "main.js.map": "/RestauranteFrontend/static/js/main.a91c8edc.chunk.js.map",
+    "runtime-main.js": "/RestauranteFrontend/static/js/runtime-main.7e598fae.js",
+    "runtime-main.js.map": "/RestauranteFrontend/static/js/runtime-main.7e598fae.js.map",
+    "static/css/2.383c0125.chunk.css": "/RestauranteFrontend/static/css/2.383c0125.chunk.css",
+    "static/js/2.b5ed9ade.chunk.js": "/RestauranteFrontend/static/js/2.b5ed9ade.chunk.js",
+    "static/js/2.b5ed9ade.chunk.js.map": "/RestauranteFrontend/static/js/2.b5ed9ade.chunk.js.map",
+    "index.html": "/RestauranteFrontend/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/RestauranteFrontend/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.8763a4e9.chunk.css.map": "/RestauranteFrontend/static/css/main.8763a4e9.chunk.css.map",
+    "static/js/2.b5ed9ade.chunk.js.LICENSE.txt": "/RestauranteFrontend/static/js/2.b5ed9ade.chunk.js.LICENSE.txt",
+    "static/media/header.css": "/RestauranteFrontend/static/media/comida3.19392dd5.jpg",
+    "static/media/Register.css": "/RestauranteFrontend/static/media/fondo_oscuro.4562a76b.jpg",
+    "static/media/logo@2x.04dd1c3c.png": "/RestauranteFrontend/static/media/logo@2x.04dd1c3c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cb534c72.js",
+    "static/js/runtime-main.7e598fae.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.527fcc34.chunk.js",
-    "static/css/main.e1b56263.chunk.css",
+    "static/js/2.b5ed9ade.chunk.js",
+    "static/css/main.8763a4e9.chunk.css",
     "static/js/main.a91c8edc.chunk.js"
   ]
 }
