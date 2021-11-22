@@ -48,8 +48,8 @@ export const createRecord = async (entity, body) => {
       body: JSON.stringify(body),
     });
 
-    alert("Comentario creado exitosamente");
+    
   } catch (error) {
-    alert(`Error al eliminar el ${entity}`);
+    
   }
 };
