@@ -14,30 +14,29 @@ import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
-    <div className="sidebar" style={{marginBottom:"50px"}}>
+    <div className="sidebar" style={{ marginBottom: "50px" }}>
       <div className="sidebarWrapper">
-        
         <div className="sidebarMenu">
           {/* <h2 className="sidebarTitle">Administrar</h2> */}
           <ul className="sidebarList">
-          <Link to="/inicio" className="link">
-            <li className="sidebarListItem">
-              <LineStyle className="sidebarIcon" />
-              Nosotros
-            </li>
+            <Link to="/inicio" className="link">
+              <li className="sidebarListItem">
+                <LineStyle className="sidebarIcon" />
+                Nosotros
+              </li>
             </Link>
             <Link to="/users" className="link">
               <li className="sidebarListItem">
-                <  AssignmentInd className="sidebarIcon" />
+                <AssignmentInd className="sidebarIcon" />
                 Personal
               </li>
-              </Link>
-              <Link to="/clients" className="link">
+            </Link>
+            <Link to="/clients" className="link">
               <li className="sidebarListItem">
                 <PermIdentity className="sidebarIcon" />
                 Clientes
               </li>
-              </Link>
+            </Link>
             <Link to="/products" className="link">
               <li className="sidebarListItem">
                 <RestaurantMenu className="sidebarIcon" />
@@ -45,9 +44,9 @@ export default function Sidebar() {
               </li>
             </Link>
             <li className="sidebarListItem">
-                <AssignmentTurnedIn className="sidebarIcon" />
-                Servicios
-              </li>
+              <AssignmentTurnedIn className="sidebarIcon" />
+              Servicios
+            </li>
             <li className="sidebarListItem">
               <AddAlertSharp className="sidebarIcon" />
               Reservas
@@ -61,13 +60,13 @@ export default function Sidebar() {
               Contactenos
             </li>
             <li className="sidebarListItem">
-              <Comment className="sidebarIcon" />
-              Comentarios
+              <Link to="/comments">
+                <Comment className="sidebarIcon" />
+                Comentarios
+              </Link>
             </li>
-                  
           </ul>
         </div>
-       
       </div>
     </div>
   );

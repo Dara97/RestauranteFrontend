@@ -12,6 +12,7 @@ import NewClient from "./newClient/NewClient";
 import ProductList from "./productList/ProductList";
 import Product from "./product/Product";
 import NewProduct from "./newProduct/NewProduct";
+import { CommentsList } from "./CommentsList/CommentsList";
 
 
 function Dashboard() {
@@ -53,6 +54,9 @@ function Dashboard() {
           </Route>
           <Route path="/newproduct">
             <NewProduct />
+          </Route>
+          <Route path="/comments">
+            <CommentsList />
           </Route>
         </Switch>
       </div>
