@@ -3,16 +3,12 @@ import "./Inicio.css";
 
 import WidgetSm from "../../../components/Dashboard/widgetSm/WidgetSm";
 
-
 export default function Inicio() {
   return (
     <div className="inicio">
       <FeaturedInfo />
-     
       <div className="inicioWidgets">
-        
-        <WidgetSm/>
-       
+        <WidgetSm />
       </div>
     </div>
   );

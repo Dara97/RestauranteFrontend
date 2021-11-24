@@ -12,6 +12,7 @@ import NewClient from "./newClient/NewClient";
 import ProductList from "./productList/ProductList";
 import Product from "./product/Product";
 import NewProduct from "./newProduct/NewProduct";
+import Otro from "./productList/Otro";
 
 function Dashboard() {
   return (
