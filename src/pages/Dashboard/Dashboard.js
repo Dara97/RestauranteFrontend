@@ -13,6 +13,7 @@ import ProductList from "./productList/ProductList";
 import Product from "./product/Product";
 import NewProduct from "./newProduct/NewProduct";
 
+
 function Dashboard() {
   return (
     <Router>
@@ -45,6 +46,7 @@ function Dashboard() {
           </Route>
           <Route path="/products">
             <ProductList />
+           
           </Route>
           <Route path="/product/:productId">
             <Product />
