@@ -44,10 +44,17 @@ export default function Sidebar() {
                 Menu
               </li>
             </Link>
+
+            <Link to="/servicios" className="link">
             <li className="sidebarListItem">
                 <AssignmentTurnedIn className="sidebarIcon" />
                 Servicios
               </li>
+            </Link>
+
+            
+
+
             <li className="sidebarListItem">
               <AddAlertSharp className="sidebarIcon" />
               Reservas

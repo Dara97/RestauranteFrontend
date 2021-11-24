@@ -81,7 +81,7 @@ class Datos extends Component {
     return this.state.datos.map((data) => {
       return (
         <div className="featured">
-           <div className="featuredItem">
+          <div className="featuredItem">
             <span className="featuredTitle">Propuesta</span>
             <div className="featuredMoneyContainer">
               <div key={data.id_nosotros}> </div>

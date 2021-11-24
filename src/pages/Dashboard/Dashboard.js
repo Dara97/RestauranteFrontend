@@ -12,6 +12,7 @@ import NewClient from "./newClient/NewClient";
 import ProductList from "./productList/ProductList";
 import Product from "./product/Product";
 import NewProduct from "./newProduct/NewProduct";
+import Servicios from "./servicios/servicios"
 
 function Dashboard() {
   return (
@@ -49,8 +50,8 @@ function Dashboard() {
           <Route path="/product/:productId">
             <Product />
           </Route>
-          <Route path="/newproduct">
-            <NewProduct />
+          <Route path="/servicios">
+            <Servicios />
           </Route>
         </Switch>
       </div>
