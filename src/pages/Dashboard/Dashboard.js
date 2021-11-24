@@ -12,7 +12,12 @@ import NewClient from "./newClient/NewClient";
 import ProductList from "./productList/ProductList";
 import Product from "./product/Product";
 import NewProduct from "./newProduct/NewProduct";
+<<<<<<< HEAD
 import Otro from "./productList/Otro";
+=======
+import { CommentsList } from "./CommentsList/CommentsList";
+
+>>>>>>> df02544ac61162d3000568dca3d532e8505182d4
 
 function Dashboard() {
   return (
@@ -46,12 +51,16 @@ function Dashboard() {
           </Route>
           <Route path="/products">
             <ProductList />
+           
           </Route>
           <Route path="/product/:productId">
             <Product />
           </Route>
           <Route path="/newproduct">
             <NewProduct />
+          </Route>
+          <Route path="/comments">
+            <CommentsList />
           </Route>
         </Switch>
       </div>
