@@ -3,32 +3,19 @@ import "./nosotros.css";
 import personal from "../../data/personal.json";
 import { Carrusel } from "../../components/Carrusel/Carrusel";
 import carruselTestimonios from "../../data/carruselTest.json";
-<<<<<<< HEAD
-import QuienesSomos from "../../components/QuienesSomos/QuienesSomos"
-=======
 import { useState } from "react";
 import { createRecord, useGet } from "../../api/crudActions";
+import QuienesSomos from "../../components/QuienesSomos/QuienesSomos";
 
 const initialForm = {
   usuario: "",
   descripcion: "",
 };
->>>>>>> 79431370597745dc3c338a65542570812f886f46
 
 export const Nosotros = () => {
   let personalData = personal;
   let carruselTest = carruselTestimonios;
 
-<<<<<<< HEAD
-    let personalData = personal;
-    let carruselTest = carruselTestimonios;
-    return (
-
-        <>
-            <QuienesSomos />
-
-
-=======
   const [form, setForm] = useState({ ...initialForm });
   const [comments, setComments] = useState([]);
   const { refetch } = useGet("Comentario", {
@@ -45,7 +32,6 @@ export const Nosotros = () => {
       [ev.target.name]: ev.target.value,
     });
   };
->>>>>>> 79431370597745dc3c338a65542570812f886f46
 
   const onAddComment = () => {
     if (!form.usuario.trim() || !form.descripcion.trim()) return;
@@ -58,39 +44,7 @@ export const Nosotros = () => {
   return (
     <>
       <section id="historia">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-5 d-flex">
-              <div className="container container_historia align-self-center ">
-                <h1 className="text-uppercase mb-4 text-light">
-                  Nuestra Historia
-                </h1>
-                <p className="text-light mb-4">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
-                  natus atque eveniet animi eum saepe recusandae odio laudantium
-                  voluptate ullam sunt, impedit nulla distinctio molestias
-                  repellendus voluptatibus labore eius magni Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Sunt, laboriosam! Iusto
-                  commodi eius vitae ad saepe mollitia et praesentium quae optio
-                  nesciunt, quam at repudiandae nam similique maiores delectus
-                  voluptatibus!!
-                </p>
-                <a href="#equipo" className="btn boton-nosotros">
-                  Mas
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-7">
-              <div className="container contener_imagen">
-                <img
-                  src="https://res.cloudinary.com/ddqxtzvyw/image/upload/v1636248782/restaurant-images/restaurante1.jpg"
-                  className="img-fluid rounded restaurante"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <QuienesSomos/>
       </section>
 
       <section id="equipo">

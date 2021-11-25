@@ -64,9 +64,6 @@ export default function ClientList() {
     <div className="clientList">
       <div className="clientTitleContainer">
           <h1 className="clientTitle">Clientes</h1>
-          <Link to="/newclient">
-            <button className="clientAddButton">Crear</button>
-          </Link>
         </div>
       <DataGrid
         rows={data}

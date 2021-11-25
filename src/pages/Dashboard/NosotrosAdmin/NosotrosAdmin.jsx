@@ -11,7 +11,7 @@ class Datos extends Component {
   componentDidMount() {
     this.fetchData();
   }
-
+  
   fetchData() {
     fetch("http://localhost:41399/api/nosotros/")
       .then((response) => response.json())

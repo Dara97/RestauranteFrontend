@@ -56,8 +56,10 @@ export default function Sidebar() {
               Compras
             </li>
             <li className="sidebarListItem">
+              <Link to="/contact">
               <Contacts className="sidebarIcon" />
               Contactenos
+              </Link>
             </li>
             <li className="sidebarListItem">
               <Link to="/comments">

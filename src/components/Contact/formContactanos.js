@@ -8,20 +8,11 @@ import swal from "sweetalert";
 class formulario extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      form: {
-        id_contacto: "",
-        nombre: "",
-        email: "",
-        telefono: 0,
-        asunto: "",
-        mensaje: "",
-      },
-    };
+    this.state = { datos: [], nombre: '', email: '', telefono: '', asunto: '', mensaje: '' };
     this.sendEmail = this.sendEmail.bind(this);
   }
 
-  componentDidMount() {
+  /* componentDidMount() {
     this.fetchData();
   }
 
@@ -31,20 +22,21 @@ class formulario extends React.Component {
       .then((data) => {
         this.setState({ datos: data });
       });
-  }
+  } */
 
 
-  handleChange = (e) => {
-    this.setState({
-      form: {
-        ...this.state.form,
-        [e.target.name]: e.target.value,
-      },
-    });
+  /*   handleChange = (e) => {
+      this.setState({
+        form: {
+          ...this.state.form,
+          [e.target.name]: e.target.value,
+        },
+        
+      });
+      console.log(this.state.form)
+    }; */
 
-  };
-
-  agregarDatos(dato) {
+  /* agregarDatos(dato) {
     console.log(dato)
     fetch("http://localhost:41399/api/contacto/", {
       method: "POST",
@@ -59,6 +51,25 @@ class formulario extends React.Component {
         alert("Dato creado")
       })
       ;
+  } */
+
+  fetchCrearServicios() {
+    fetch('http://localhost:41399/api/contacto/', {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        "nombre": this.state.nombre,
+        "email": this.state.email,
+        "telefono": this.state.telefono,
+        "asunto": this.state.asunto,
+        "mensaje": this.state.mensaje,
+
+      })
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Dato creado")
+      });
   }
 
   sendEmail(event) {
@@ -109,7 +120,7 @@ class formulario extends React.Component {
                         type="text"
                         name="nombre"
                         pattern="[a-zA-Z- ]{10,30}"
-                        onChange={this.handleChange}
+                        onChange={(e) => this.setState({ nombre: e.target.value })}
                       />
                     </p>
                   </Col>
@@ -117,12 +128,12 @@ class formulario extends React.Component {
                     <p>
                       <label>Correo electronico</label>
                       <input
-                        id="correo"
+                        id="email"
                         type="email"
                         name="email"
                         minlength="8"
                         maxlength="60"
-                        onChange={this.handleChange}
+                        onChange={(e) => this.setState({ email: e.target.value })}
                       />
                     </p>
                   </Col>
@@ -136,14 +147,18 @@ class formulario extends React.Component {
                         id="telefono"
                         type="number"
                         name="telefono"
-                        onChange={this.handleChange} />
+                        onChange={(e) => this.setState({ telefono: e.target.value })} />
                     </p>
                   </Col>
 
                   <Col>
                     <p>
                       <label>Asunto del contacto</label>
-                      <input id="asunto" type="text" name="asunto" onChange={this.handleChange} />
+                      <input
+                        id="asunto"
+                        type="text"
+                        name="asunto"
+                        onChange={(e) => this.setState({ asunto: e.target.value })} />
                     </p>
                   </Col>
                 </Row>
@@ -158,7 +173,7 @@ class formulario extends React.Component {
                         rows="3"
                         cols="40"
                         placeholder="Deja tu comentario o solicitud aquí"
-                        onChange={this.handleChange}
+                        onChange={(e) => this.setState({ mensaje: e.target.value })}
                       ></textarea>
                     </p>
                   </Col>
@@ -170,9 +185,10 @@ class formulario extends React.Component {
                 </p>
 
                 <p className="block">
-                  <button type="submit" id="button" onClick={() => this.agregarDatos(this.state.form)}>
+                  <button type="submit" id="button" onClick={() => this.fetchCrearServicios()}>
                     Enviar
                   </button>
+                  
                 </p>
               </form>
             </div>

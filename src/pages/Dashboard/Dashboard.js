@@ -4,20 +4,13 @@ import "./Dashboard.css";
 import Inicio from "./Inicio/Inicio";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import UserList from "./userList/UserList";
-import User from "./user/User";
-import NewUser from "./newUser/NewUser";
 import ClientList from "./clientList/ClientList";
-import Client from "./client/Client";
-import NewClient from "./newClient/NewClient";
 import ProductList from "./productList/ProductList";
-import Product from "./product/Product";
-import NewProduct from "./newProduct/NewProduct";
-<<<<<<< HEAD
-import Otro from "./productList/Otro";
-=======
+import ContactAdmin from "./Contact/ContactAdmin";
+
+
 import { CommentsList } from "./CommentsList/CommentsList";
 
->>>>>>> df02544ac61162d3000568dca3d532e8505182d4
 
 function Dashboard() {
   return (
@@ -34,33 +27,17 @@ function Dashboard() {
           <Route path="/users">
             <UserList />
           </Route>
-          <Route path="/user/:userId">
-            <User />
-          </Route>
-          <Route path="/newUser">
-            <NewUser />
-          </Route>
           <Route path="/clients">
             <ClientList />
           </Route>
-          <Route path="/client/:clientId">
-            <Client />
-          </Route>
-          <Route path="/newclient">
-            <NewClient />
-          </Route>
           <Route path="/products">
             <ProductList />
-           
-          </Route>
-          <Route path="/product/:productId">
-            <Product />
-          </Route>
-          <Route path="/newproduct">
-            <NewProduct />
           </Route>
           <Route path="/comments">
             <CommentsList />
+          </Route>
+          <Route path="/contact">
+            <ContactAdmin />
           </Route>
         </Switch>
       </div>
