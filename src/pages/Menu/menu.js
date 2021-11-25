@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { Footer } from "../../components/Footer/footer";
 import { MenuItem } from "../../components/MenuItem/menu";
-
-import { menuData } from "../../data/menuData";
 
 import "./menu.css";
 
 export const Menu = () => {
+  const [datos, setDatos] = useState([]);
+
   const [showAlert, setShowAlert] = useState(false);
 
   const onShowAlert = () => {
@@ -16,6 +15,12 @@ export const Menu = () => {
       setShowAlert(false);
     }, 2000);
   };
+
+  fetch("http://localhost:41399/api/producto")
+    .then((response) => response.json())
+    .then((data) => {
+      setDatos(data);
+    });
 
   return (
     <>
@@ -47,34 +52,13 @@ export const Menu = () => {
         </div>
 
         <section class="container" style={{ padding: "24px 0 64px" }}>
-          <h1 class="comida">HAMBURGUESAS</h1>
           <div class="row" id="burguer">
-            {menuData.burguers.map((item) => (
-              <MenuItem key={item.id} data={item} showAlert={onShowAlert} />
-            ))}
-          </div>
-          <h1 class="comida" style={{ marginTop: "80px" }}>
-            PIZZAS
-          </h1>
-          <div class="row" id="pizza">
-            {menuData.pizzas.map((item) => (
-              <MenuItem key={item.id} data={item} showAlert={onShowAlert} />
-            ))}
-          </div>
-          <h1 class="comida" style={{ marginTop: "80px" }}>
-            PROTEÍNAS
-          </h1>
-          <div class="row" id="protein">
-            {menuData.proteins.map((item) => (
-              <MenuItem key={item.id} data={item} showAlert={onShowAlert} />
-            ))}
-          </div>
-          <h1 class="comida" style={{ marginTop: "80px" }}>
-            ENSALADAS
-          </h1>
-          <div class="row" id="salad">
-            {menuData.salads.map((item) => (
-              <MenuItem key={item.id} data={item} showAlert={onShowAlert} />
+            {datos.map((item) => (
+              <MenuItem
+                key={item.id_producto}
+                data={item}
+                showAlert={onShowAlert}
+              />
             ))}
           </div>
         </section>

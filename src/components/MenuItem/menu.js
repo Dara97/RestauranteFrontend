@@ -4,7 +4,7 @@ import { AppContext } from "../../context/AppContext";
 import "./menu.css";
 
 export const MenuItem = ({
-  data: { id, name, description, price, image },
+  data: { id_producto, nombre, descripcion, precio, imagen_producto },
   showAlert,
 }) => {
   const { onShowModal, addToShoppingCart } = useContext(AppContext);
@@ -12,11 +12,11 @@ export const MenuItem = ({
   const onAddToCart = () => {
     showAlert();
     return addToShoppingCart({
-      id,
-      name,
-      description,
-      price,
-      image,
+      id_producto,
+      nombre,
+      descripcion,
+      precio,
+      imagen_producto,
       add: true,
     });
   };
@@ -24,28 +24,28 @@ export const MenuItem = ({
   return (
     <div class="col" style={{ marginTop: "32px" }}>
       <div id="nameProduct">
-        <h3>{name}</h3>
+        <h3>{nombre}</h3>
       </div>
 
       <div>
-        <img src={`https://res.cloudinary.com/ddqxtzvyw/image/upload/v1636248786/restaurant-images/${image}`} alt="Hamburguesa especial" id="image" />
+        <img src={imagen_producto} alt="Hamburguesa especial" id="image" />
       </div>
 
       <div id="priceProduct">
         <h2>
           <i class="fas fa-dollar-sign"></i>
-          <span class="precio"> {price} </span>
+          <span class="precio"> {precio} </span>
         </h2>
       </div>
 
       <div class="description">
-        <h6>{description}</h6>
+        <h6>{descripcion}</h6>
         <br />
         <button
           type="button"
           class="btn btn-warning btn-block"
           onClick={() => {
-            onShowModal(name, image);
+            onShowModal(nombre, imagen_producto);
           }}
         >
           <i class="fas fa-plus-circle"></i> Más información

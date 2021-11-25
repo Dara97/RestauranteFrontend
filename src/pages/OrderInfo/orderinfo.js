@@ -117,7 +117,7 @@ export const OrderInfo = () => {
               </div>
             </div>
             <div className="order-info__form-group">
-              <div className="order-info__form-pair form__only">
+              <div className="order-info_form-pair form_only">
                 <label htmlFor="">Comentarios o solicitudes especiales</label>
                 <input
                   type="text"
@@ -147,10 +147,10 @@ export const OrderInfo = () => {
                 <div className="ofdt-price">Precio unitario($)</div>
                 <div className="ofdt-count">Cantidad</div>
               </div>
-              {shoppingCartItems.map(({ id, name, price, count }) => (
+              {shoppingCartItems.map(({ id, nombre, precio, count }) => (
                 <div className="order-info__data-table-item" key={id}>
-                  <div className="ofdt-name">{name}</div>
-                  <div className="ofdt-price">{price}</div>
+                  <div className="ofdt-name">{nombre}</div>
+                  <div className="ofdt-price">{precio}</div>
                   <div className="ofdt-count">{count}</div>
                 </div>
               ))}

@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 
 import { AppContext } from "../../context/AppContext";
 
-export const MyModal = ({ name, image }) => {
+export const MyModal = ({ nombre, imagen_producto }) => {
   const { showModal, onCloseModal, modalInfo } = useContext(AppContext);
 
   let history = useHistory();
@@ -17,12 +17,12 @@ export const MyModal = ({ name, image }) => {
   return (
     <Modal show={showModal} onHide={onCloseModal}>
       <Modal.Header closeButton>
-        <Modal.Title>{modalInfo.name}</Modal.Title>
+        <Modal.Title>{modalInfo.nombre}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <img
-          src={`/images/${modalInfo.image}`}
-          alt={modalInfo.name}
+          src={modalInfo.imagen_producto}
+          alt={modalInfo.nombre}
           id="image"
         />
         <p>

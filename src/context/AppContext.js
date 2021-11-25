@@ -6,33 +6,33 @@ export const AppProvider = ({ children }) => {
   const [showModal, setShowModal] = useState(false);
   const [shoppingCartItems, setShoppingCartItems] = useState([]);
   const [modalInfo, setModalInfo] = useState({
-    name: "",
-    image: "",
+    nombre: "",
+    imagen_producto: "",
   });
 
-  const onShowModal = (name, image) => {
+  const onShowModal = (nombre, imagen_producto) => {
     setShowModal(true);
     setModalInfo({
-      name,
-      image,
+      nombre,
+      imagen_producto,
     });
   };
 
   const onCloseModal = () => setShowModal(false);
 
   const addToShoppingCart = ({
-    id,
-    name,
-    image,
-    description,
-    price,
+    id_producto,
+    nombre,
+    imagen_producto,
+    descripcion,
+    precio,
     count,
     add,
   }) => {
     let exist = false;
 
     for (let i = 0; i < shoppingCartItems.length; i++) {
-      if (shoppingCartItems[i].id === id) {
+      if (shoppingCartItems[i].id_producto === id_producto) {
         shoppingCartItems[i].count = add
           ? shoppingCartItems[i].count + 1
           : count;
@@ -46,11 +46,11 @@ export const AppProvider = ({ children }) => {
       setShoppingCartItems([
         ...shoppingCartItems,
         {
-          id,
-          name,
-          image,
-          description,
-          price,
+          id_producto,
+          nombre,
+          imagen_producto,
+          descripcion,
+          precio,
           count: 1,
         },
       ]);
@@ -59,7 +59,7 @@ export const AppProvider = ({ children }) => {
 
   const removeToShoppingCart = (id) => {
     for (let i = 0; i < shoppingCartItems.length; i++) {
-      if (shoppingCartItems[i].id === id) {
+      if (shoppingCartItems[i].id_producto === id) {
         shoppingCartItems.splice(i, 1);
         setShoppingCartItems([...shoppingCartItems]);
         break;
@@ -71,7 +71,7 @@ export const AppProvider = ({ children }) => {
     let result = 0;
 
     for (let item of shoppingCartItems) {
-      result += item.count * item.price;
+      result += item.count * item.precio;
     }
 
     return result;

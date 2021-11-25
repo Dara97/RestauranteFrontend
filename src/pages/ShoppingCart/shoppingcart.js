@@ -27,13 +27,13 @@ export const ShoppingCart = () => {
     history.push("/orden");
   };
 
-  const onChangeItemCount = (ev, id) => {
+  const onChangeItemCount = (ev, id_producto) => {
     if (ev.target.value <= 0) {
       onShowAlert();
-      return removeToShoppingCart(id);
+      return removeToShoppingCart(id_producto);
     }
 
-    return addToShoppingCart({ id, count: ev.target.value });
+    return addToShoppingCart({ id_producto, count: ev.target.value });
   };
 
   return (
@@ -72,29 +72,36 @@ export const ShoppingCart = () => {
             <>
               <div className="carrito-items my-scroll">
                 {shoppingCartItems.map(
-                  ({ id, name, description, price, image, count }) => (
-                    <div className="carrito-item" key={id}>
+                  ({
+                    id_producto,
+                    nombre,
+                    descripcion,
+                    precio,
+                    imagen_producto,
+                    count,
+                  }) => (
+                    <div className="carrito-item" key={id_producto}>
                       <div className="carrito-item-img">
-                        <img src={`https://res.cloudinary.com/ddqxtzvyw/image/upload/v1636248786/restaurant-images/${image}`} alt={name} />
-                        <p>{name}</p>
+                        <img src={imagen_producto} alt={nombre} />
+                        <p>{nombre}</p>
                       </div>
                       <div className="carrito-item-descripcion">
-                        {description}
+                        {descripcion}
                       </div>
-                      <div className="carrito-item-precio">{price}</div>
+                      <div className="carrito-item-precio">{precio}</div>
                       <div className="carrito-item-cantidad">
                         <input
                           type="number"
                           value={count}
                           onChange={(ev) => {
-                            onChangeItemCount(ev, id);
+                            onChangeItemCount(ev, id_producto);
                           }}
                         />
                         <button
                           className="bg-danger"
                           onClick={() => {
                             onShowAlert();
-                            removeToShoppingCart(id);
+                            removeToShoppingCart(id_producto);
                           }}
                         >
                           X
