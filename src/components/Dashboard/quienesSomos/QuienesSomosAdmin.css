@@ -27,6 +27,7 @@
     margin: 10px 0px;
     display: flex;
     align-items: center;
+    color: black;
 }
 
 .featuredMoney{
@@ -57,4 +58,7 @@
 
 .nombresFormTitulo{
     color: black;
+}
+.imagen_historia{
+    width: 400px;
 }

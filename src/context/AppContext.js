@@ -10,11 +10,12 @@ export const AppProvider = ({ children }) => {
     imagen_producto: "",
   });
 
-  const onShowModal = (nombre, imagen_producto) => {
+  const onShowModal = (nombre, imagen_producto, descripcion) => {
     setShowModal(true);
     setModalInfo({
       nombre,
       imagen_producto,
+      descripcion,
     });
   };
 

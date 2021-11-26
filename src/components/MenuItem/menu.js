@@ -45,7 +45,7 @@ export const MenuItem = ({
           type="button"
           class="btn btn-warning btn-block"
           onClick={() => {
-            onShowModal(nombre, imagen_producto);
+            onShowModal(nombre, imagen_producto, descripcion);
           }}
         >
           <i class="fas fa-plus-circle"></i> Más información

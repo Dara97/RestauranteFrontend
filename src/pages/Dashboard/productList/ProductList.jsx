@@ -129,24 +129,24 @@ class DatosProductos extends Component {
                   </div>
                   <br />
 
-                  <img
+                  <img 
                     className="productListImg"
                     src={data.imagen_producto}
                     alt=""
                   />
                   <div>
-                    <div key={data.id_producto}>
+                  <div key={data.id_producto}>
                       <button
                         type="button"
-                        className="btn btn-primary"
+                        className="btn btn-dark btn-outline-dark"
                         onClick={() => this.borrarProducto(data.id_producto)}
                       >
                         Eliminar
                       </button>
-
+                      &nbsp;&nbsp;&nbsp;
                       <button
                         type="button"
-                        className="btn btn-primary"
+                        className="btn btn-dark btn-outline-dark"
                         onClick={() => this.abrirVentanaEditar(data)}
                       >
                         Editar
@@ -165,7 +165,7 @@ class DatosProductos extends Component {
         >
           <Modal.Title>Editar producto</Modal.Title>
           <Modal.Body>
-            <label>Nombre producto</label>
+            <label className="labelProductList">Nombre producto</label>
             <input
               className="form-control"
               name="nombre"

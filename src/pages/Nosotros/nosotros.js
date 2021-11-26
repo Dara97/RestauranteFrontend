@@ -50,10 +50,13 @@ export const Nosotros = () => {
       <section id="equipo">
         <div className="container todo ">
           <div className="contenido-nosotros mt-5">
-            <h1 className="title text-lg-center">Nuestra equipo</h1>
+            <h1 className="title text-lg-center">Nuestro equipo</h1>
             <p className="text-lg-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
-              eaque id fugiat nemo distinctio ipsam accusamus.
+            El equipo del Restaurante SAL&SALSA está formado por 15 personas. 
+            Profesionales que con su dedicación y esfuerzo diarios, consiguen que todo 
+            funcione a la perfección. El objetivo es siempre el mismo:
+             que las personas que acuden a nuestro restaurante disfruten de un momento agradable,
+              degustando nuestros platos y sintiéndose exquisitamente bien atendidos.
             </p>
           </div>
           <div className="row ">
@@ -73,27 +76,33 @@ export const Nosotros = () => {
             <h1 className="padding-top padding-h1">
               Unas palabras de nuestros clientes
             </h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+           
           </div>
           {comments.length && <Carrusel data={comments} />}
           <div className="form-group">
             <div className="Row">
-              <label className="Comentarios">Añadir comentarios</label>
+              <label className="Comentarios">Escribe aqui tu comentario!</label>
               <div className="col-">
+              <br/>
                 <input
                   type="text"
                   name="usuario"
                   className="form-control"
                   value={form.usuario}
                   onChange={onChange}
+                  placeholder="Nombre completo"
+                  
                 />
+                <br/>
                 <textarea
                   className="form-control"
                   name="descripcion"
                   rows="2"
                   onChange={onChange}
                   value={form.descripcion}
+                  placeholder="Opinion o comentario"
                 />{" "}
+                <br/>
                 <button
                   className="btn button-comentarios"
                   onClick={onAddComment}

@@ -77,7 +77,7 @@ class QuienesSomosAdmin extends Component {
                   {data.historia}
                   <img
                     src={data.imagen}
-                    className="img-fluid rounded restaurante"
+                    className="imagen_historia"
                     alt=""
                   />
                 </div>

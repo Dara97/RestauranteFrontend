@@ -17,7 +17,7 @@ export default function ClientList() {
     { field: "id", headerName: "ID", width: 90 },
     {
       field: "client",
-      headerName: "Client",
+      headerName: "Personal",
       width: 200,
       renderCell: (params) => {
         return (

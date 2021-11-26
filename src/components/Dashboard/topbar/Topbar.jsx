@@ -10,7 +10,7 @@ export default function Topbar() {
           <span className="logo-topbar">Administrador</span>
         </div>
         <div className="topRight">
-          <div className="topbarIconContainer">
+          {/* <div className="topbarIconContainer">
             <NotificationsNone />
             <span className="topIconBadge">20</span>
           </div>
@@ -20,7 +20,7 @@ export default function Topbar() {
           </div>
           <div className="topbarIconContainer">
             <Settings />
-          </div>
+          </div> */}
           
           <img src="https://cdn-icons-png.flaticon.com/512/2195/2195416.png" alt="" className="topAvatar" />
         </div>

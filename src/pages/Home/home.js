@@ -19,13 +19,12 @@ export const Home = () => {
           <div className="content-center">
             <h1 className="title">Nuestra propuesta</h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
-              eaque id fugiat nemo distinctio ipsam accusamus, voluptatem, enim
-              architecto animi dolor. Veritatis tempora dignissimos veniam, ea
-              amet quos blanditiis eaque Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Voluptas, ipsam fuga ut eos cum, illum totam
-              dignissimos ipsum sit debitis explicabo, quibusdam nihil! Non,
-              praesentium. Iure, ratione. Ea, cupiditate sit!
+              Desde que inauguramos el primer restaurante,
+              nuestro compromiso ha sido satisfacer tus gustos,
+              expectativas y necesidades con una excelente calidad.
+              Siendo expertos en hamburguesas y brindando nuevos sabores en cada
+              producto que creamos para ti. Por esta razón, utilizamos materias
+              primas seleccionadas, para la preparación de nuestros alimentos.
             </p>
           </div>
         </div>
@@ -47,10 +46,9 @@ export const Home = () => {
           <div className="content-center">
             <h1 className="padding-h1">Organizamos eventos</h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-              atque consectetur nesciunt cumque, iure esse voluptatem odit
-              maxime, vel mollitia, earum doloremque veritatis pariatur
-              inventore saepe temporibus. Fuga, exercitationem architecto!
+              SAL&SALSA es el lugar ideal para todo tipo de eventos y recepciones:
+              Matrimonios, Bautizos, Cumpleaños, Aniversarios, Desayunos, Reuniones de trabajo…
+              Aquí sus invitados serán atendidos con sobriedad, distinción y calidez.
             </p>
           </div>
 
@@ -61,7 +59,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      
+
     </>
   );
 };

@@ -16,7 +16,7 @@ export default function UserList() {
     { field: "id", headerName: "ID", width: 90 },
     {
       field: "user",
-      headerName: "User",
+      headerName: "Personal",
       width: 200,
       renderCell: (params) => {
         return (
@@ -63,9 +63,7 @@ export default function UserList() {
     <div className="userList" >
          <div className="userTitleContainer">
         <h1 className="userTitle">Personal</h1>
-        <Link to="/newUser">
-          <button className="userAddButton">Crear</button>
-        </Link>
+       
       </div>
       <DataGrid
         rows={data}

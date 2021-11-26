@@ -106,15 +106,24 @@ class ContactAdmin extends Component {
   render() {
     return (
       <>
-
+      <div className="contenedorContacto">
+ {/*  <button
+            class="btn btn-dark btn-outline-dark boton-agregar"
+            onClick={() => this.abrirVentanaInsertar()}
+          >
+            Agregar contacto
+          </button> */}
         {this.state.datos.map((data) => (
           <div className={data.nombre} id={data.nombre}>
             <div className="featured">
               <div className="featuredItem">
                 <div key={data.id_contacto}> </div>
+                
                 <div>{data.nombre}</div>
                 <div>{data.email}</div>
                 <div> {data.telefono}</div>
+                <div> {data.asunto}</div>
+                <div> {data.mensaje}</div>
 
                 <div>
                   <div key={data.id_contacto}>
@@ -135,7 +144,7 @@ class ContactAdmin extends Component {
               </div>
             </div>
           </div>
-        ))}
+        ))} </div>
 
         <Modal
           show={this.state.modalActualizar}

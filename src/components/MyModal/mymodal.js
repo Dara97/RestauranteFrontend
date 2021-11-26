@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 
 import { AppContext } from "../../context/AppContext";
 
-export const MyModal = ({ nombre, imagen_producto }) => {
+export const MyModal = ({ nombre, imagen_producto, descripcion }) => {
   const { showModal, onCloseModal, modalInfo } = useContext(AppContext);
 
   let history = useHistory();
@@ -26,9 +26,7 @@ export const MyModal = ({ nombre, imagen_producto }) => {
           id="image"
         />
         <p>
-          Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s.
+            {modalInfo.descripcion}
         </p>
       </Modal.Body>
       <Modal.Footer>

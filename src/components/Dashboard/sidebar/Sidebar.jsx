@@ -31,12 +31,6 @@ export default function Sidebar() {
                 Personal
               </li>
             </Link>
-            <Link to="/clients" className="link">
-              <li className="sidebarListItem">
-                <PermIdentity className="sidebarIcon" />
-                Clientes
-              </li>
-            </Link>
             <Link to="/products" className="link">
               <li className="sidebarListItem">
                 <RestaurantMenu className="sidebarIcon" />
@@ -51,22 +45,18 @@ export default function Sidebar() {
               <AddAlertSharp className="sidebarIcon" />
               Reservas
             </li>
+            <Link to="/contact" className="link">
             <li className="sidebarListItem">
-              <AttachMoney className="sidebarIcon" />
-              Compras
+                <Contacts className="sidebarIcon" />
+                Contactenos
             </li>
+            </Link>
+            <Link to="/comments" className="link">
             <li className="sidebarListItem">
-              <Link to="/contact">
-              <Contacts className="sidebarIcon" />
-              Contactenos
-              </Link>
-            </li>
-            <li className="sidebarListItem">
-              <Link to="/comments">
                 <Comment className="sidebarIcon" />
                 Comentarios
-              </Link>
             </li>
+            </Link>
           </ul>
         </div>
       </div>

@@ -1,10 +1,15 @@
-img {
+.productListImg {
   width: 200px;
   height: 200px;
 }
 .productList {
 }
 
-label {
+.labelProductList {
   color: black;
+}
+.boton-agregar {
+  position: relative;
+  bottom: 30px;
+  left: 360px;
 }

@@ -26,33 +26,14 @@ class QuienesSomos extends Component {
       .then((response) => response.json())
       .then((data) => {
         alert("dato editado");
+        this.fetchData();
       });
   }
 
   render() {
     return this.state.datos.map((data) => {
       return (
-        /*  <div className="featured">
-          <div className="featuredItem">
-            <span className="featuredTitle">Historia</span>
-            <div className="featuredMoneyContainer">
-              <div key={data.id_nosotros}> </div>
-              <i>{data.historia}</i>
-            </div>
-            <div></div>
-          </div>
-          <div className="featuredItem">
-            <div className="featuredMoneyContainer">
-              <div key={data.id_nosotros}> </div>
-              <img
-                src={data.imagen}
-                className="img-fluid rounded restaurante"
-                alt=""
-              />
-            </div>
-          </div>
-        </div> */
-        <section id="historia">
+              <section id="historia">
           <div className="container">
             <div className="row">
               <div className="col-lg-5 d-flex">
