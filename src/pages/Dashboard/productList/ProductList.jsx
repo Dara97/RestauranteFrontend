@@ -3,6 +3,7 @@ import "./tableProduct.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 
 class DatosProductos extends Component {
   constructor(props) {
@@ -104,46 +105,59 @@ class DatosProductos extends Component {
   render() {
     return (
       <>
-        <button
-          className="botonAgregar"
-          onClick={() => this.abrirVentanaInsertar()}
-        >
-          Agregar producto
-        </button>
+        <div className="row">
+          <button
+            class="btn btn-dark btn-outline-dark boton-agregar"
+            onClick={() => this.abrirVentanaInsertar()}
+          >
+            Agregar producto
+          </button>
+          {this.state.datos.map((data) => (
+            <div className={data.nombre} id={data.nombre}>
+              <div className="featured">
+                <div className="featuredItem">
+                  <div key={data.id_producto}> </div>
+                  <div>
+                    <h1>{data.nombre}</h1>
+                  </div>
+                  <br />
+                  <div>{data.descripcion}</div>
+                  <br />
+                  <div>
+                    <AttachMoneyIcon />
+                    {data.precio}
+                  </div>
+                  <br />
 
-        {this.state.datos.map((data) => (
-          <div className={data.nombre} id={data.nombre}>
-            <div className="featured">
-              <div className="featuredItem">
-                <div key={data.id_producto}> </div>
-                {data.nombre}
-                {data.descripcion}
-                {data.precio}
-                <img
-                  className="productListImg"
-                  src={data.imagen_producto}
-                  alt=""
-                />
-                <div>
-                  <div key={data.id_producto}>
-                    <button
-                      className="actionNosotros"
-                      onClick={() => this.borrarProducto(data.id_producto)}
-                    >
-                      Eliminar
-                    </button>
-                    <button
-                      className="actionNosotros"
-                      onClick={() => this.abrirVentanaEditar(data)}
-                    >
-                      Editar
-                    </button>
+                  <img
+                    className="productListImg"
+                    src={data.imagen_producto}
+                    alt=""
+                  />
+                  <div>
+                    <div key={data.id_producto}>
+                      <button
+                        type="button"
+                        className="btn btn-primary"
+                        onClick={() => this.borrarProducto(data.id_producto)}
+                      >
+                        Eliminar
+                      </button>
+
+                      <button
+                        type="button"
+                        className="btn btn-primary"
+                        onClick={() => this.abrirVentanaEditar(data)}
+                      >
+                        Editar
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
 
         <Modal
           show={this.state.modalActualizar}

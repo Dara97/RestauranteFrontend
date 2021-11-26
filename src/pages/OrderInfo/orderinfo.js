@@ -11,8 +11,8 @@ export const OrderInfo = () => {
   let order = [];
 
   for (let i = 0; i < shoppingCartItems.length; i++) {
-    var nameProduct = shoppingCartItems[i].name;
-    var priceProduct = shoppingCartItems[i].price;
+    var nameProduct = shoppingCartItems[i].nombre;
+    var priceProduct = shoppingCartItems[i].precio;
     var count = shoppingCartItems[i].count;
     total = total + priceProduct * count;
 
